@@ -13,9 +13,9 @@ var (
 )
 
 func buildAPI(user string, postID string) string {
-	url := fmt.Sprintf("https://emma.pixnet.cc/blog/articles/%s?user=%s", postID, user)
-	log.Print(url)
-	return url
+	u := fmt.Sprintf("https://emma.pixnet.cc/blog/articles/%s?user=%s", postID, user)
+	log.Print(u)
+	return u
 }
 
 func main() {
